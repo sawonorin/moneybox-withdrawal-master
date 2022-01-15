@@ -24,3 +24,11 @@ As part of this process however, you should look to refactor some of the code in
 Once you have completed test, zip up your solution, excluding any build artifacts to reduce the size, and email it back to our recruitment team.
 
 Good luck!
+
+## My Notes
+
+* I did not implement repository as it is not stated. This impacted the test cases I could have written as below:
+  1. Test for all errors that is thrown in the 2 methods.
+  2. Other test for domain services and repositories.
+* I added a logger but assumed that the other initiation is done.
+* I introduced checking for transaction repetition within a specified time, 1 minute.
