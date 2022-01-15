@@ -12,10 +12,10 @@ namespace Moneybox.App.Features
         private IAccountRepository _accountRepository;
         private INotificationService _notificationService;
         private ITransactionRepository _transactionRepository;
-        private ILogger<TransferMoney> _logger;
+        private ILogger<WithdrawMoney> _logger;
 
         public WithdrawMoney(IAccountRepository accountRepository, INotificationService notificationService,
-                               ITransactionRepository transactionRepository, ILogger<TransferMoney> logger)
+                               ITransactionRepository transactionRepository, ILogger<WithdrawMoney> logger)
         {
             this._accountRepository = accountRepository;
             this._notificationService = notificationService;
