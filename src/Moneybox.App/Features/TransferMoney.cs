@@ -20,6 +20,15 @@ namespace Moneybox.App.Features
             var from = this.accountRepository.GetAccountById(fromAccountId);
             var to = this.accountRepository.GetAccountById(toAccountId);
 
+            if (from == null)
+            {
+                throw new ApplicationException("From Account does not exist");
+            }
+            if (to == null)
+            {
+                throw new ApplicationException("System Account is not configured");
+            }
+
             var fromBalance = from.Balance - amount;
             if (fromBalance < 0m)
             {
